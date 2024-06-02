@@ -28,17 +28,15 @@ locals {
   projectTitle = title(replace(local.product_information.context.project, "_", " "))
   layerTitle   = title(replace(local.product_information.context.layer, "_", " "))
   serviceTitle = title(replace(local.product_information.context.service, "_", " "))
-  domainNames  = ["gavanier.io", "marc.gavanier.io"]
+  domainNames  = ["marc.gavanier.io"]
 }
 
 locals {
   service = {
-    marc_gavanier = {
-      name = "marc_gavanier"
-      client = {
-        name  = "client"
-        title = "client"
-      }
+    name = "marc_gavanier"
+    website = {
+      name  = "website"
+      title = "website"
     }
   }
 }

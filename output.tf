@@ -1,3 +1,3 @@
-output "client_cloudfront_distribution_id" {
-  value = aws_cloudfront_distribution.marc_gavanier.id
+output "website_cloudfront_distribution_id" {
+  value = aws_cloudfront_distribution.web_front_hosting.id
 }
